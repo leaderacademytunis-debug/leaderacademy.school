@@ -2,12 +2,14 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [
-    react()
-  ],
+  plugins: [react()],
   build: {
     outDir: "dist",
-    emptyOutDir: true
+    emptyOutDir: true,
   },
-  // ملاحظة: معالجة CSS تتم تلقائياً عبر postcss.config.js الموجود في جذور المشروع
+  resolve: {
+    alias: {
+      "@": "/client/src",
+    },
+  },
 });
