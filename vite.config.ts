@@ -8,5 +8,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true
-  }
+  },
+  // ملاحظة: معالجة CSS تتم تلقائياً عبر postcss.config.js الموجود في جذور المشروع
 });
